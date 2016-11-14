@@ -1,0 +1,207 @@
+@import "normalize";
+@import "layout";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+$primary: #ffcc00;
+$primary-font: "Raleway", sans-serif;
+$heading-font: "Roboto", sans-serif;
+
+body{
+	font: 400 14px/1.7 "Raleway", Arial, sans-serif;
+	color: #333;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 900;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.2;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1170px;
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+    outline: none;
+    text-decoration: none;
+    color: #666;
+    border: 1px solid #ffcc00;
+    width: 120px;
+    height: 22px;
+    text-transform: uppercase;
+    font-family: 700 14px/1.7 "OpenSans", sans-serif;
+    font-weight: 700;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background: #ffcc00;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-team {
+	text-align: center;
+	padding: 110px 0;
+	&__title {
+		text-transform: uppercase;
+		color:  $primary;
+		font-size: 60px;
+		margin: 0 0 48px;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			width: 450px;
+			height: 1px;
+			background: $primary;
+			margin: 24px auto 0;
+		}
+		&:before {
+			content: "";
+			background: #FFF url(../img/bonfire.svg) 50% no-repeat;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			height: 20px;
+			width: 40px;
+			transform: tranaslate(-50%, 50%);
+		}
+	}
+
+	&__subtitle {
+		font-family: $primary-font;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color:  #898f8f;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0;
+	}
+}
+
+.ba-team-slider {
+
+	&__image {
+		float: left;
+		width: 50%;
+		padding: 0 68px 0 83px;
+		img {
+			border: 1px solid $primary;
+			display: block;
+			box-shadow: 100px 0 0 -80px #fff,
+			-100px 0 0 -80px #fff,
+			0 100px 0 -80px #fff,
+			0 -100px 0 -80px #fff;
+		}
+	}
+	&__image-border {
+		border: 1px solid $primary;
+		display: block;
+		padding: 15px;
+	}
+	&__content {
+		float: left;
+	 	width: 50%;
+	 }
+	&__content {
+		border-left: 2px solid #ffcc00;
+		padding: 90px 68px 70px 83px;
+		vertical-align: top;
+	}
+}
+
+.ba-socials {
+		a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		color: #cccccc;
+		border: 2px solid currentColor;
+		border-radius: 50%;
+		text-align: center;
+		padding: 5px;
+		&:hover {
+			color: $primary;
+		}
+		svg {
+			display: block;
+			height: 100%;
+			width: 100%;
+			fill: currentColor;
+			text-align: center;
+		}
+	}
+}
+
+.ba-team__name {
+	font-family: $heading-font;
+	color:  #666666;
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 68px;
+	letter-spacing: 0.02em;
+}
+
+.ba-team__position {
+	font-family: $primary-font;
+	color:  #666666;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.ba-team-slider__content p {
+	font-family: $primary-font;
+	color:  #333333;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+ul li {
+	display: inline-block;
+	color: #ffcc00;
+}
